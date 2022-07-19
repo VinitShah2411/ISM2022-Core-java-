@@ -1,3 +1,5 @@
+package Task11;
+
 import java.util.Scanner;
 
 public class Insurance
@@ -6,16 +8,16 @@ public class Insurance
 	{
 		String health,live,gender;
 		int age;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Your Health excellent & poor");
-		health = sc.next();	
-		System.out.println("Enter Your Age");
-		age = sc.nextInt();
-		System.out.println("Enter Your Living Area City or Village");
-		live = sc.next();
-		System.out.println("Enter Your Gender male & female");
-		gender = sc.next();
-		
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter Your Health excellent & poor");
+			health = sc.next();	
+			System.out.println("Enter Your Age");
+			age = sc.nextInt();
+			System.out.println("Enter Your Living Area City or Village");
+			live = sc.next();
+			System.out.println("Enter Your Gender male & female");
+			gender = sc.next();
+		}
 		if(health.equals("excellent") && age>=25 && age<=35 && live.equals("city") && gender.equals("male"))
 		{
 			System.out.println("Premium is Rs. 4 per thousand");
@@ -39,12 +41,4 @@ public class Insurance
 		Insurance i = new Insurance();
 		i.check();
 	}
-}
-	
-	
-	
-			
-	
-	
-	
-	
+}	

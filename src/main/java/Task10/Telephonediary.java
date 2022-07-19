@@ -1,3 +1,25 @@
+
+/*Telephone Diary 
+
+
+We need to create one diary app for user.
+when user open app it display menu for operation 
+e.g
+
+1 Add new Contact
+2 Edit Contact
+3 Search Contact 
+4 Remove Contact 
+5 Exit From App 
+
+
+1 Add contact will add new contact in app. we need to store first name last name and phone number of user. 
+2 Edit contact will modify user info.  user can search via firstname once user found then only edit function will work
+3 when user want to contact any person user can use this functionality, he can add first name of user and your app will list all users with matching first name 
+4  remove contact will remove contact from app user can remove contact via first name , if multiple user found then app need to confirm which user need to be deleted , you have to manage this by your own way 
+5 exit :)*/
+
+package Task10;
 import java.util.Scanner;
 
 public class Telephonediary 
@@ -94,7 +116,7 @@ public class Telephonediary
 	
 	void display() 
 	{
-		for(int i=0;i<t.length-1;i++) 
+		for(int i=0;i<count;i++) 
 		{
 			System.out.println(t[i].firstName + "\t" + t[i].lastName + "\t" + t[i].pno);
 		}
@@ -155,7 +177,6 @@ public class Telephonediary
 			{
 				System.out.println("Logout");
 				System.exit(0);
-				break;
 			}
 			
 			}

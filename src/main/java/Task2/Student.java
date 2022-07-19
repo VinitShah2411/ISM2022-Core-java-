@@ -1,3 +1,23 @@
+
+/*task 2) 
+	Student 
+			-studentId 
+			-name 
+			-email
+			-password 
+			
+	when any student registered studentId will automatically assign 
+	an unique number. 
+	name email and password will input by student. 
+	
+    create two methods 1) input 2) print 
+    
+    
+    111111	ram	ram@gmail.com	ram123*/
+
+
+
+package Task2;
 import java.util.*;
 import java.lang.Math;  
 class Student {

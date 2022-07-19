@@ -1,3 +1,11 @@
+/*task 7)
+	Find common Numbers from 2 one dimension arrays.
+		Array1:  1  2  3  4   5  6  7  
+		Array2:  2  9  5  10 15  7  80
+		Output : 2 5  7 */
+
+
+package Task7;
 public class Commonarr 
 {
 	public static void main(String[] args) {
@@ -16,13 +24,3 @@ public class Commonarr
 		}
 	}
 }
-
-
-				
-		
-	
-	
-	
-	
-	
-	
