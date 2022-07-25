@@ -1,3 +1,8 @@
+/*17.create 2 thread 1st thread find sum of 1 to 50 and 2nd thread find sum of 51 to 100
+once both the thread find sum then print final sum.*/
+
+package Task17;
+
 class Threadsum implements Runnable {
 	static int sum = 0;
 
